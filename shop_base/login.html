@@ -37,14 +37,14 @@
 				<div class="error">Invalid email address or password.</div>
 
 				<label>
-					<input type="email" placeholder="Email Address" data-name="email" required>
+					<input type="email" placeholder="Email Address" name="email" required>
 				</label>
 
 				<label>
-					<input type="password" placeholder="Password" data-name="password" required>
+					<input type="password" placeholder="Password" name="password" required>
 				</label>
 
-				<button class="btn">Sign in</button>
+				<button class="btn" id="loginbtn">Sign in</button>
 			</form>
 
 			<form id="registrationForm" class="userForm">
@@ -54,19 +54,19 @@
 				<div class="error">Invalid email address or password.</div>
 
 				<label>
-					<input type="text" placeholder="Full name" data-name="name" required>
+					<input type="text" placeholder="Full name" name="name" required>
 				</label>
 
 				<label>
-					<input type="email" placeholder="Email Address" data-name="email" required>
+					<input type="email" placeholder="Email Address" name="email" required>
 				</label>
 
 				<label>
-					<input type="password" placeholder="Password" data-name="password" required>
+					<input type="password" placeholder="Password" name="password" required>
 				</label>
 
 				<label>
-					<input type="password" placeholder="Verify Password" data-name="passwordVerify" required>
+					<input type="password" placeholder="Verify Password" name="passwordVerify" required>
 				</label>
 
 				<button class="btn">Create Account</button>
@@ -74,6 +74,7 @@
 		</div>
 	</div>
 
-	<script src="js/script.js"></script>
+	<script type="module" src="js/login.js"></script>
+	<script type="module" src="js/registration.js"></script>
 </body>
 </html>
