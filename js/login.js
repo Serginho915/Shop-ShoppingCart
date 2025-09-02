@@ -38,7 +38,7 @@ loginForm.addEventListener('submit', async(e) =>{
 
     const userLocal = getUser();
 
-    if (userLocal && headerUser) {
+    if (userLocal.name !== '') {
         headerUser.textContent = user.name;
         headerUser.setAttribute("href", "./account.html");
     }

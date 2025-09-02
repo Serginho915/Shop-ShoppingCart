@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     headerShoppingCartCount.textContent = user.shoppingCart?.length || 0;
 
     const headerUser = document.querySelector("#headerUser");
-    headerUser.textContent = user.name;
+    headerUser.textContent = user.name ;
     headerUser.setAttribute("href", "./account.html");
+    
     const headerLogout = document.querySelector('#headerLogout');
     headerLogout.style.display = 'block';
   }

@@ -7,7 +7,7 @@ import logOut from "./logOut.js";
 document.addEventListener("DOMContentLoaded", async ()=> {
   const deleteBtn = document.querySelector("#deleteAcc");
   const user = getUser();
-  if (!user) return;
+  if (!user && user.name === '') return;
 
   
   const headerUser = document.querySelector("#headerUser");
